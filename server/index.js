@@ -31,7 +31,7 @@ app.get('/download', async (req, res) => {
         // Get video info using ytdl
         const info = await ytdl.getBasicInfo(link)
         const h360 = info.formats.filter((file) => file.qualityLabel === "360p")
-        const h720 = info.formats.filter((file) => file.qualityLabel === "720p")
+        const h720 = info.formats.filter((file) => file.qualityLabel === "720p") 
         const h1080 = info.formats.filter((file) => file.qualityLabel === "1080p")
 
         // Respond the metadata

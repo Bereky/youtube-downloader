@@ -17,7 +17,7 @@ function App() {
     setError(false)
     setLoading(true)
 
-    axios.get("http://localhost:5000", {
+    axios.get("http://localhost:5000/download", {
       params: {
         link: link
       }
@@ -44,17 +44,17 @@ function App() {
               <button type="submit" className="btn btn-danger my-4">Download</button>
           </div>
       </form>
-      <div className="container-fluid w-100 m-1 d-flex justify-content-center align-items-center flex-column">
+      <div className="container-fluid w-100 m-1 d-flex justify-content-center align-items-center flex-column flex-wrap">
         {error && <h3 className='text-danger'>Error Invalid link!</h3> }
         {loading && <ReactLoading type='bubbles' color="black" height={450} width={150}/>}
-        <div className='d-flex flex-row w-100'>
+        <div className='d-flex flex-row w-100 h-100 flex-wrap'>
           {data && 
-            <div className='container d-flex flex-column'>
-              <img src={data.info.player_response.videoDetails.thumbnail.thumbnails[4].url} style={{height: "450px", width: "550px"}} alt="thumbnail"/>
+            <div className='container d-flex flex-column align-self-start' style={{height: "450px", width: "500px"}}>
+              <img src={data.info.player_response.videoDetails.thumbnail.thumbnails[4].url} style={{height: "450px", width: "500px"}} alt="thumbnail"/>
               <h3 className='text-center m-4'>{data.info.player_response.videoDetails.title}</h3>
             </div>
           }
-          <div className='container d-flex justify-content-center flex-column'>
+          <div className='container d-flex justify-content-center flex-column' style={{height: "400px", width: "250px"}}>
             {data && data.data.map((quality) => quality && <a href={quality.url} target="_blank"><button className='btn btn-primary m-4 w-100' key={uuid}>{quality.qualityLabel}</button></a>)}
           </div>
         </div>
