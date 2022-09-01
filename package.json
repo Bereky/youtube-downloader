@@ -1,0 +1,24 @@
+{
+  "name": "youtube-downloader",
+  "version": "1.0.0",
+  "description": "Free youtube downloader",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bereky/youtube-downloader.git"
+  },
+  "keywords": [
+    "ytdl",
+    "ytdl-core",
+    "youtubedownloader"
+  ],
+  "author": "Bereket Lemma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bereky/youtube-downloader/issues"
+  },
+  "homepage": "https://github.com/Bereky/youtube-downloader#readme"
+}
