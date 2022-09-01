@@ -17,7 +17,7 @@ function App() {
     setError(false)
     setLoading(true)
 
-    axios.get("http://localhost:5000/download", {
+    axios.get("http://localhost:5000", {
       params: {
         link: link
       }

@@ -11,6 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
     "social-downloader-cherry": "^1.0.0",
     "ytdl": "^1.4.1",
     "ytdl-core": "^4.11.1"
