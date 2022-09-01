@@ -55,7 +55,7 @@ function App() {
             </div>
           }
           <div className='container d-flex justify-content-center flex-column' style={{height: "400px", width: "250px"}}>
-            {data && data.data.map((quality) => quality && <a href={quality.url} target="_blank"><button className='btn btn-primary m-4 w-100' key={uuid}>{quality.qualityLabel}</button></a>)}
+            {data && data.data.map((quality) => quality && <a href={quality.url} target="_blank" rel='noreferrer'><button className='btn btn-primary m-4 w-100' key={uuid}>{quality.qualityLabel}</button></a>)}
           </div>
         </div>
       </div>
