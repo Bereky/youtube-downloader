@@ -1,5 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
-.container {
+body {
     font-family: 'Quicksand', cursive;
+    background-color: #0F131A;
+    color: #E9EBF0;
 }
+
+a {
+    text-decoration: none;
+    color: #E9EBF0;
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #E9EBF0
+}
+
+.container-main {
+    min-height: 250px;
+    height: auto;
+}
+
+.github {
+    right: 5%;
+    top: 5%;
+    width: 50px;
+}
+
+form {
+    background-color: #1a1d24;
+}
+
+.form-group {
+    width: 80vw;
+}
+
