@@ -1,9 +1,9 @@
 # Youtube Downloader
 
-Copy and paste Youtube links and download any video you want.
-
+This site allows you to convert & download video from YouTube with 1080p, 720p and 360p quality.
 
 ## Setup
+
 After you cloned this repository:
 
 - To run the front end
