@@ -47,11 +47,11 @@ function App() {
               <button type="submit" className="btn btn-outline-light mx-1 p-3">Download</button>
           </div>
       </form>
-      <div className="container-fluid w-auto d-flex justify-content-center align-items-center flex-column flex-wrap search-result">
+      <div className="container-fluid d-flex justify-content-center align-items-center flex-column flex-wrap search-result">
         {error && <h3 className='text-danger'>Error or invalid link!</h3> }
         {loading && <ReactLoading type='bubbles' color="#ffffff" height={100} width={100}/>}
         {data && 
-        <div className='d-flex flex-row w-100 h-100 flex-wrap'>
+        <div className='d-flex flex-row w-100 h-100 flex-wrap '>
           <div className='container d-flex justify-content-center flex-column align-self-start' style={{height: "450px", width: "500px"}}>
             <img src={data.info.player_response.videoDetails.thumbnail.thumbnails[4].url} style={{height: "auto", width: "100%"}} alt="thumbnail"/>
             <h3 className='text-center m-4'>{data.info.player_response.videoDetails.title}</h3>

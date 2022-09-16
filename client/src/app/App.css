@@ -36,3 +36,7 @@ form {
     width: 80vw;
 }
 
+.search-result {
+    background-color: #1a1d24;
+    width: 85%;
+}
