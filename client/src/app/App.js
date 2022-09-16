@@ -52,10 +52,10 @@ function App() {
         {loading && <ReactLoading type='bubbles' color="#ffffff" height={100} width={100}/>}
         {data && 
         <div className='d-flex flex-row w-100 h-100 flex-wrap'>
-            <div className='container d-flex justify-content-center flex-column align-self-start' style={{height: "450px", width: "500px"}}>
-              <img src={data.info.player_response.videoDetails.thumbnail.thumbnails[4].url} style={{height: "auto", width: "100%"}} alt="thumbnail"/>
-              <h3 className='text-center m-4'>{data.info.player_response.videoDetails.title}</h3>
-            </div>
+          <div className='container d-flex justify-content-center flex-column align-self-start' style={{height: "450px", width: "500px"}}>
+            <img src={data.info.player_response.videoDetails.thumbnail.thumbnails[4].url} style={{height: "auto", width: "100%"}} alt="thumbnail"/>
+            <h3 className='text-center m-4'>{data.info.player_response.videoDetails.title}</h3>
+          </div>
           <div className='container d-flex justify-content-center flex-column' style={{height: "400px", width: "300px"}}>
              {data.data.map((quality) => quality && <a href={quality.url} target="_blank" rel='noreferrer'><button className='btn btn-outline-light m-4 w-100' key={uuid}>{quality.qualityLabel}</button></a>)}
           </div>
