@@ -1,6 +1,6 @@
 # Youtube Downloader
 
-This site allows you to convert & download video from YouTube with 1080p, 720p and 360p quality.
+Convert & download video from YouTube with 1080p, 720p and 360p quality.
 
 ## Demo
 
@@ -15,6 +15,11 @@ This site allows you to convert & download video from YouTube with 1080p, 720p a
   alt="Alt text"
   title="Optional title"
   style="display: inline-block; margin: 0 auto; max-width: 300px">
+
+## Dependencies
+
+- [ytdl](https://www.npmjs.com/package/ytdl-core) - YouTube downloading module
+- [expressJs](https://www.npmjs.com/package/express) - NodeJS framework
 
 ## Setup
 
